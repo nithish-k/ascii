@@ -2,6 +2,10 @@ let video;
 
 const density = "Ñ@#W$9876543210?!abc;:+=-,._ ";
 
+function saveToFile() {
+    saveCanvas('ASCII', 'png');
+}
+
 function setup() {
     video = createCapture(VIDEO);
     let w = video.width;
