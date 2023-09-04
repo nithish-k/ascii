@@ -15,16 +15,16 @@ function setup() {
 styleType = 0;
   
 function draw() { 
-    background(255);
+    background(0);
     gridSize = 10;
     video.loadPixels();
     for (let y=0; y<video.height; y+=gridSize) {
       for (let x=0; x<video.width; x+=gridSize) {
         let index = (y * video.width - x) * 4;
         let r = video.pixels[index];
-        let ind = floor(map(r, 0,255, 0, density.length));
-        let dia = floor(map(r, 0,255, gridSize, 0));
-        fill(0);
+        let ind = floor(map(r, 0,255, density.length, 0));
+        let dia = floor(map(r, 0,255, 0, gridSize));
+        fill(255);
         noStroke();
         textSize(gridSize);
         if(styleType == 0){
