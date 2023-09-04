@@ -16,7 +16,7 @@ styleType = 0;
   
 function draw() { 
     background(255);
-    gridSize = 10;
+    gridSize = floor(windowWidth/100);
     video.loadPixels();
     for (let y=0; y<video.height; y+=gridSize) {
       for (let x=0; x<video.width; x+=gridSize) {
