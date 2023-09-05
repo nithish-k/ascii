@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#mycanvas{
-    position: absolute;
-    border: 2.5px solid gray;
-    top: 35px;
-}
-#styleMenu{
-    position: fixed;
-    z-index: 9;
-    top: 5px;
-    height: 25px;
-}
-#saveBtn{
-    position: fixed;
-    z-index: 9;
-    top: 5px;
-    left: 80px;
-    height: 25px;
-}
-=======
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -48,4 +25,3 @@
 #saveBtn:hover{
     background-color: rgb(206, 206, 206);
 }
->>>>>>> master
