@@ -1,20 +1,20 @@
 let video;
 let styleType = 0;
 
-let density = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,^`'. ";
+let density = "@%#*+=-:. ";
 
 function saveToFile(){
     saveCanvas('ASCII', 'png');
 }
 
 function setup(){
-    let video = createCapture(VIDEO);
-    let { width, height } = video;
+    video = createCapture(VIDEO);
+    let { width, height } = video.size();
     video.size(windowWidth - 20, windowWidth * (height / width));
     video.hide();
-    let cnv = createCanvas(windowWidth - 20, windowWidth * (height / width));
+    cnv = createCanvas(windowWidth - 20, windowWidth * (height / width));
     cnv.id('mycanvas');
-    let saveBtn = createButton('save');
+    saveBtn = createButton('save');
     saveBtn.position(0, windowWidth * (height / width) + 60);
     saveBtn.mousePressed(saveToFile);
     saveBtn.id('saveBtn');
@@ -34,9 +34,9 @@ function draw(){
             fill(0);
             noStroke();
             textSize(gridSize);
-            if (styleType === 0) {
+            if (styleType == 0) {
                 text(density.charAt(ind), x, y);
-            } else if (styleType === 1) {
+            } else if (styleType == 1) {
                 circle(x + gridSize / 2, y + gridSize / 2, dia);
             } else {
                 square(x + gridSize / 2, y + gridSize / 2, dia);
