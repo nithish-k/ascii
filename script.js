@@ -1,7 +1,7 @@
 let video;
 let styleType = 0;
 
-let density = "@%#*+=-:. ";
+let density = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'.";
 
 function saveToFile(){
     saveCanvas('ASCII', 'png');
